@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
-using System.Drawing;
 using System.IO;
 
 namespace PaintApp.Forms
@@ -103,10 +102,10 @@ namespace PaintApp.Forms
                     switch (saveFileDialog.FilterIndex)
                     {
                         case 1:
-                            this.pbBoard.Image.Save(fs, Imaging.ImageFormat.Jpeg);
+                            this.pbBoard.Image.Save(fs, System.Drawing.Imaging.ImageFormat.Jpeg);
                             break;
                         case 2:
-                            this.pbBoard.Image.Save(fs, Imaging.ImageFormat.Bmp);
+                            this.pbBoard.Image.Save(fs, System.Drawing.Imaging.ImageFormat.Bmp);
                             break;
                     }
                     fs.Close();

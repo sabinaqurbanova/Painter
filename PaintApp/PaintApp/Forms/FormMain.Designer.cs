@@ -66,14 +66,14 @@
             // saveToolStripMenuSave
             // 
             this.saveToolStripMenuSave.Name = "saveToolStripMenuSave";
-            this.saveToolStripMenuSave.Size = new System.Drawing.Size(103, 22);
+            this.saveToolStripMenuSave.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuSave.Text = "Save";
             this.saveToolStripMenuSave.Click += new System.EventHandler(this.saveToolStripMenuSave_Click);
             // 
             // openToolStripMenuOpen
             // 
             this.openToolStripMenuOpen.Name = "openToolStripMenuOpen";
-            this.openToolStripMenuOpen.Size = new System.Drawing.Size(103, 22);
+            this.openToolStripMenuOpen.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuOpen.Text = "Open";
             this.openToolStripMenuOpen.Click += new System.EventHandler(this.openToolStripMenuOpen_Click);
             // 
@@ -139,10 +139,10 @@
             // 
             // pbBoard
             // 
-            this.pbBoard.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pbBoard.Location = new System.Drawing.Point(0, 52);
+            this.pbBoard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbBoard.Location = new System.Drawing.Point(0, 49);
             this.pbBoard.Name = "pbBoard";
-            this.pbBoard.Size = new System.Drawing.Size(800, 398);
+            this.pbBoard.Size = new System.Drawing.Size(800, 401);
             this.pbBoard.TabIndex = 2;
             this.pbBoard.TabStop = false;
             this.pbBoard.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbBoard_MouseDownAndUp);
