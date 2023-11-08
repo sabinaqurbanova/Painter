@@ -37,11 +37,10 @@
             this.btnPenIncrease = new System.Windows.Forms.ToolStripButton();
             this.btnPenDecrease = new System.Windows.Forms.ToolStripButton();
             this.toolStripBtnClear = new System.Windows.Forms.ToolStripButton();
-            this.pbBoard = new System.Windows.Forms.PictureBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.pnlArt = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBoard)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -66,16 +65,14 @@
             // saveToolStripMenuSave
             // 
             this.saveToolStripMenuSave.Name = "saveToolStripMenuSave";
-            this.saveToolStripMenuSave.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuSave.Size = new System.Drawing.Size(103, 22);
             this.saveToolStripMenuSave.Text = "Save";
-            this.saveToolStripMenuSave.Click += new System.EventHandler(this.saveToolStripMenuSave_Click);
             // 
             // openToolStripMenuOpen
             // 
             this.openToolStripMenuOpen.Name = "openToolStripMenuOpen";
-            this.openToolStripMenuOpen.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuOpen.Size = new System.Drawing.Size(103, 22);
             this.openToolStripMenuOpen.Text = "Open";
-            this.openToolStripMenuOpen.Click += new System.EventHandler(this.openToolStripMenuOpen_Click);
             // 
             // toolStrip1
             // 
@@ -137,35 +134,35 @@
             this.toolStripBtnClear.Text = "Clear";
             this.toolStripBtnClear.Click += new System.EventHandler(this.toolStripBtnClear_Click);
             // 
-            // pbBoard
+            // pnlArt
             // 
-            this.pbBoard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbBoard.Location = new System.Drawing.Point(0, 49);
-            this.pbBoard.Name = "pbBoard";
-            this.pbBoard.Size = new System.Drawing.Size(800, 401);
-            this.pbBoard.TabIndex = 2;
-            this.pbBoard.TabStop = false;
-            this.pbBoard.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbBoard_MouseDownAndUp);
-            this.pbBoard.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pbBoard_MouseMove);
-            this.pbBoard.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbBoard_MouseDownAndUp);
+            this.pnlArt.BackColor = System.Drawing.Color.White;
+            this.pnlArt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlArt.Location = new System.Drawing.Point(0, 49);
+            this.pnlArt.Name = "pnlArt";
+            this.pnlArt.Size = new System.Drawing.Size(800, 401);
+            this.pnlArt.TabIndex = 2;
+            this.pnlArt.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlArt_MouseDown);
+            this.pnlArt.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlArt_MouseMove);
+            this.pnlArt.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlArt_MouseUp);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pbBoard);
+            this.Controls.Add(this.pnlArt);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
             this.Text = "Paint App";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBoard)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,10 +176,10 @@
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuOpen;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnPenDecrease;
-        private System.Windows.Forms.PictureBox pbBoard;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.ToolStripButton toolStripBtnClear;
         private System.Windows.Forms.ToolStripButton btnSetColor;
         private System.Windows.Forms.ToolStripButton btnPenIncrease;
+        private System.Windows.Forms.Panel pnlArt;
     }
 }
